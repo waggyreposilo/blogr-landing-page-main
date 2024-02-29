@@ -1,0 +1,112 @@
+.phones{
+    @include flex();
+    //border:solid black 3px;
+    //height:39.0625rem;
+    background-size:10rem;
+    background: -19.125rem -14rem url("../assets/images/bg-pattern-circles.svg") no-repeat,$bg-gradient-intro-body;
+    border-top-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    padding: 6.6875rem 1.5rem;
+    &_header{
+        font-size: 1.875rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom:1rem;
+    }
+
+    &_content{
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    
+}
+
+.white{
+    color:$neutral-text;
+}
+
+@include query(68.75rem){
+    .phones{
+        height:24rem;
+        flex-direction:row;
+        justify-content: space-between;
+
+
+        background: -13rem -33rem url("../assets/images/bg-pattern-circles.svg") no-repeat ,$bg-gradient-intro-body;
+        padding: 0 7.7rem;
+
+        &_header{
+            font-size: 2.5rem;
+            text-align:left;
+        }
+
+        &_content{
+            text-align: left;
+            line-height: 1.5125rem;
+            padding-right:4rem;
+        }
+
+        &_img{
+            position:static;
+        }
+    }
+}
+
+/*.phones{
+    @include flex();
+    position:relative;
+    border:solid 1px black;
+    &_img{ 
+        z-index:2;
+    }
+
+    &_text{
+        @include flex();
+        gap:2.375rem;
+        padding-inline:1.5rem;
+        padding-block: 14rem 7rem;
+
+        border-top-right-radius: 6rem;
+        border-bottom-left-radius: 6rem;
+        background: -6rem -13rem url("../assets/images/bg-pattern-circles.svg") no-repeat ,$bg-gradient-intro-body;
+        background-repeat: no-repeat;
+        background-size: 153%;
+        
+        position:absolute;
+        top:50%;
+        
+    }
+
+    &_header{
+        font-size: 1.875rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &_content{
+        font-size: 1.125rem;
+        text-align: center;
+    }
+}
+
+.white{
+    color:$neutral-text;
+}
+
+@include query(68.75rem){
+    .phones{
+
+        &_text{
+            padding-block:7.5rem;
+            padding-inline:46.0625rem 10.4375rem;
+            background: -13rem -33rem url("../assets/images/bg-pattern-circles.svg") no-repeat ,$bg-gradient-intro-body;
+            top:inherit;
+        }
+
+        &_img{
+            //position:relative;
+            padding-right:44%;
+        }
+    }
+}*/

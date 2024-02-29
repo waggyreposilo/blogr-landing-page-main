@@ -1,0 +1,43 @@
+.header-content1{
+    background:url(../assets/images/bg-pattern-intro-mobile.svg), $bg-gradient-intro-cta;
+    
+    background-repeat: no-repeat;
+    background-size:350%;
+    background-position: 36% 31.2%;
+    border-radius:0 0 0 6rem;
+}
+
+.header-2{
+    @include flex();
+    padding: 3.75rem 1.5rem;
+    gap:1.5rem;
+    & > .header-title{
+        color:$neutral-text;
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    & > .header-text{
+        color:$neutral-text;
+        text-align:center;
+    }
+}
+
+.header-content1::after{
+    content:"";
+    display:inline-block;
+    //width:23.4375rem;
+    height:4rem;    
+}
+
+@include query(68.75rem){
+
+    .header-content1{
+        background:url(../assets/images/bg-pattern-intro-desktop.svg), $bg-gradient-intro-cta;
+        
+        background-repeat: no-repeat;
+        background-size:180%;
+        background-position: 25% 50%;
+        border-radius:0 0 0 6rem;
+    }
+}

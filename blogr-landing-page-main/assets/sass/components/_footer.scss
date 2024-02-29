@@ -1,0 +1,47 @@
+.footer{
+    background:hsl(237, 17%, 21%)0%;
+    border-top-right-radius: 6rem;
+    padding:70px 100px;
+    @include flex();
+    gap:5rem;
+
+
+    &_contents,&_flex,&_options{
+        @include flex();
+    }
+
+    &_contents{
+        gap:3.25rem;
+    }
+
+    &_flex{
+        gap:2.3125rem;
+        color:$neutral-text;
+    }
+
+    &_title{
+        font-size: 1.2rem;
+        font-weight:700;
+    }
+
+    &_options{
+        gap:1.25rem;
+    }
+}
+
+.option:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@include query(68.75rem){
+
+    .footer{
+        flex-direction: row;
+        gap:12.5rem;
+        align-items: first baseline;
+        padding: 90px 100px;
+    }
+
+
+}

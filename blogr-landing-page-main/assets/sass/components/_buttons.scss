@@ -1,0 +1,81 @@
+
+.nav-buttons{
+    @include flex();
+}
+
+.header-buttons{
+    @include flex(row);
+    gap:1rem;
+}
+
+.login-btn,.signup-btn,
+.start-btn, .learn-btn{
+    border-radius: 2rem;
+    border:none;
+}
+
+.login-btn,.signup-btn{    
+    padding: 1.1875rem 3.0625rem ;
+}
+
+.start-btn, .learn-btn{
+    font-size: 0.75rem;
+    font-weight:600;
+    padding: 1.125rem 1.625rem;
+}
+
+.login-btn{
+    background:transparent;
+    color:$neutral-footer-bg;
+    font-size: 1rem;
+}
+
+.signup-btn{
+    color:$neutral-text;
+    font-size: 1rem;
+    background-color:$primary-color-cta-text;
+    border:1px solid $neutral-text;
+}
+
+.signup-btn:hover{
+    color:$neutral-text;
+    background-color: hsla(0, 0%, 100%,.4);
+}
+
+.start-btn{
+    color:$primary-color-cta-text;
+    border:1px solid $neutral-text;
+}
+
+.start-btn:hover{
+    color:$neutral-text;
+    background-color: hsla(0, 0%, 100%,.4);
+}
+
+.learn-btn{
+    color:$neutral-text;
+    background-color: transparent;
+    border:1px solid $neutral-text;
+}
+
+.learn-btn:hover{
+    color:$primary-color-cta-text;
+    background-color:$neutral-text; 
+}
+
+@include query(68.75rem){
+
+    .nav-buttons{
+        flex-direction: row;
+    }
+
+    .login-btn{
+        color: $neutral-text;
+    }
+
+    .signup-btn{
+        background-color: $neutral-text;
+        color:hsl(353, 100%, 62%);
+    }
+}
+

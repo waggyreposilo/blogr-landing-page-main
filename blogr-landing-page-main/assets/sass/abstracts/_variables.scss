@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+//primary colors
+$primary-color-cta-text: hsl(356, 100%, 66%);
+$primary-color-cta-hover: hsl(355, 100%, 74%);
+$primary-color-headings: hsl(208, 49%, 24%);
+
+//neutral
+$neutral-text: hsl(0, 0%, 100%);
+$neutral-footer-text: hsl(240, 2%, 79%);
+$neutral-body-copy: hsl(207, 13%, 34%);
+$neutral-footer-bg: hsl(0, 0%, 3%);
+
+//background gradient
+$bg-gradient-intro-cta: linear-gradient(
+    90deg,
+    hsl(13, 100%, 72%)0%,
+    hsl(353, 100%, 62%)100%)
+     no-repeat center center fixed;
+
+$bg-gradient-intro-body: linear-gradient(
+    0deg,
+    hsl(237, 17%, 21%)0%,
+    hsl(237, 23%, 32%)100%)
+    no-repeat center center fixed;
+
+//global variables
+$font-size: 16px;
+$arrow-light: url(assets/images/icon-arrow-light.svg);
+$arrow-dark: url(assets/images/icon-arrow-dark.svg);
+
+

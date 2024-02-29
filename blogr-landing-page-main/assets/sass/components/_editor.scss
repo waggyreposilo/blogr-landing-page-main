@@ -1,0 +1,75 @@
+.editor{
+  padding:6.6875rem 1.5rem;
+
+  @include flex();
+  gap:3rem;
+
+  &-title{
+    text-align:center;
+    font-size: 1.875rem;
+    font-weight:600;
+  } 
+
+
+
+  &-flex{
+    @include flex();
+    gap:1.75rem;
+  }
+
+}
+
+
+
+.contents-text{
+    @include flex();
+    gap: 3rem;
+}
+
+.content1, .content2{
+    font-size:1.125rem;
+    text-align:center;
+
+    &-header{
+        font-size:1.875rem;
+        font-weight: 600;
+        text-align:center;
+    }
+}
+
+@include query(68.75rem){
+  .editor{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .3fr 1fr;
+    padding: 11.8rem 10.4375rem;
+
+    &-title{
+      grid-column:1/span 2;
+      grid-row:1;
+      font-size:2rem;
+    }
+  }
+
+  .contents{
+    &-img{
+      grid-row: 2;
+      grid-column: 2;
+      position:absolute;
+      right:-19.7rem;
+      z-index:-1;
+
+      & > img{
+        width:90%;
+        height:90%;
+      }
+    }
+
+    &-text{
+      grid-column:1;
+      grid-row:2;
+    }
+  }
+
+  
+}

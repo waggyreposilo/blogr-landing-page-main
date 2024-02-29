@@ -1,0 +1,12 @@
+@mixin flex ($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin query ($breakpoint, $direction: min-width) {
+    @media screen and ($direction: $breakpoint) {
+        @content;
+    }
+}

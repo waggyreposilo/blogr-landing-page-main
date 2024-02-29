@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/pages";
+
+@import "layout/layout";
+
+@import "components/header";
+@import "components/navbar";
+@import "components/dropdown";
+@import "components/buttons";
+@import "components/editor";
+@import "components/phones";
+@import "components/laptop";
+@import "components/footer";

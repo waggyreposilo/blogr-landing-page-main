@@ -1,0 +1,73 @@
+.laptop{
+    @include flex();
+    gap:4.375rem;
+    padding: 6.3125rem 1.5rem;
+    //padding-block: 140% 1.5rem;
+    //padding-inline: 1.5rem;
+
+    &_contents{
+        @include flex();
+        gap:4.375rem;
+        
+    }
+
+    &_img>img{
+        height:max-content;
+        width:max-content;
+    }
+
+    &_flex{
+        @include flex();
+        gap:1rem;
+
+        & > h2.laptop_header{
+            font-size:1.875rem;
+            font-weight: 700;
+        }
+
+    }
+
+    &_header,&_content{
+        text-align: center;
+    }
+}
+
+@include query(68.75rem){
+    .laptop{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 2fr);
+        gap: 5.375rem 1rem;
+        padding: 17.6025rem 10.4375rem;
+
+        &_img{
+            grid-row:1/span 2;
+            grid-column:1;
+            position:absolute;
+            width:max-content;
+            height:max-content;
+            right:51.3%;
+            z-index:-1;
+        }
+
+        &_flex{
+            align-items:flex-start;
+        
+        }
+
+        &_header, &_content{
+            text-align:left;
+            font-size:1.125rem;
+        }
+    }
+
+    .one{
+        grid-column:2;
+        grid-row:1;
+    }
+
+    .two{
+        grid-column:2;
+        grid-row:2;
+    }
+}
